@@ -9,7 +9,7 @@ Feel free to explore =]
 
 ## License
 
-All algorithms are licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
 Have fun!
