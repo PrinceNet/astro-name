@@ -1,4 +1,4 @@
-let adjectives = [
+export const adjectives = [
   "Absolute",
   "Adamant",
   "Annular",
