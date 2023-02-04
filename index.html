@@ -23,9 +23,13 @@
         <h1 class="mx-auto text-center text-uppercase">AstroName</h1>
         <div class="box text-center col-md-6 offset-md-3" @mouseover="showCopyBtn()" @mouseleave="hideCopyBtn()">
           <h2>{{ name }}</h2>
-          <button type="button" class="btn btn-sm btn-no-box-shadow copy" v-show="isShowCopyBtn" @click="copy()">Copy</button>
+          <button type="button" class="btn btn-sm btn-no-box-shadow copy" v-show="isShowCopyBtn" @click="copy()">
+            Copy
+          </button>
         </div>
-        <button type="button" class="btn col-md-6 offset-md-3 generate btn-no-box-shadow" @click="generate()">Generate</button>
+        <button type="button" class="btn col-md-6 offset-md-3 generate btn-no-box-shadow" @click="generate()">
+          Generate
+        </button>
       </div>
     </div>
 
