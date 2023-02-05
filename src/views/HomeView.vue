@@ -79,6 +79,9 @@ export default {
     >
       Generate
     </button>
+    <p class="col-md-6 offset-md-3" style="color: rgba(255, 255, 255, 0.5)">
+      * Up to {{ nouns.length * adjectives.length }} combinations avaliable
+    </p>
   </div>
 </template>
 
