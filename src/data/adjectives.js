@@ -28,7 +28,7 @@ export const adjectives = [
   "Inferior",
   "Insidious",
   "Intergalactic",
-  "interstellar",
+  "Interstellar",
   "Invidious",
   "Jocular",
   "Lunar",
