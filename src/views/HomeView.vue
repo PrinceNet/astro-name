@@ -57,6 +57,9 @@ export default {
   <div class="container">
     <img src="@/assets/star.png" alt="star" class="logo" />
     <h1 class="mx-auto text-center text-uppercase">AstroName</h1>
+    <p class="col-md-6 offset-md-3 subtitle">
+      Your dream name is waiting for you between the stars
+    </p>
     <div
       class="box text-center col-md-6 offset-md-3"
       @mouseover="showCopyBtn()"
@@ -79,8 +82,14 @@ export default {
     >
       Generate
     </button>
-    <p class="col-md-6 offset-md-3" style="color: rgba(255, 255, 255, 0.5)">
-      * Up to {{ nouns.length * adjectives.length }} combinations avaliable
+    <p class="col-md-6 offset-md-3 disclaimer">
+      * Up to
+      {{
+        (nouns.length * adjectives.length)
+          .toString()
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+      }}
+      combinations avaliable
     </p>
   </div>
 </template>

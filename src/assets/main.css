@@ -6,30 +6,30 @@ body {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Acme", sans-serif;
+  font-family: "Imprima", sans-serif;
 }
 
 h1 {
   color: #afbed3;
   font-family: "Carter One", cursive;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-family: "Acme", sans-serif;
-  line-height: 3em;
-  font-size: 1.6em;
+  padding: 0.75em 0;
+  font-size: 1.5em;
 }
 
 .box {
   background: #00000024;
   border-radius: 4px;
-  color: white;
+  color: rgba(255, 255, 255, 0.85);
   margin-top: 40px;
 }
 
 .generate {
-  background: #5a626b;
-  color: rgba(255, 255, 255, 0.75);
+  background: #6b83ac;
+  color: rgba(255, 255, 255, 0.65);
   margin-bottom: 30px;
 }
 
@@ -52,6 +52,18 @@ h2 {
   position: absolute;
   right: 5px;
   top: 5px;
-  background: #5a626b;
-  color: rgba(255, 255, 255, 0.75);
+  background: #6b83ac;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.subtitle {
+  color: rgb(175, 190, 211);
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-transform: capitalize;
+}
+
+.disclaimer {
+  color: rgb(175, 190, 211, 0.75);
+  font-size: 0.85em;
 }
