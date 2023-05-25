@@ -9,6 +9,7 @@ export default {
       nouns: nouns,
       adjectives: adjectives,
       isShowCopyBtn: false,
+      isCopySuccess: false,
     };
   },
   created() {
@@ -32,6 +33,12 @@ export default {
     },
     copy() {
       this.copyStringToClipboard(this.name);
+
+      this.isCopySuccess = true;
+
+      setTimeout(() => {
+        this.isCopySuccess = false;
+      }, 1000);
     },
     copyStringToClipboard(str) {
       // Create new element
@@ -69,10 +76,11 @@ export default {
       <button
         type="button"
         class="btn btn-sm btn-no-box-shadow copy"
+        :class="{ 'copy--success': isCopySuccess }"
         v-show="isShowCopyBtn"
         @click="copy()"
       >
-        Copy
+        {{ isCopySuccess ? "Copied!" : "Copy" }}
       </button>
     </div>
     <button
