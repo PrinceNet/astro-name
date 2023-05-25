@@ -10,6 +10,7 @@ export default {
       adjectives: adjectives,
       isShowCopyBtn: false,
       isCopySuccess: false,
+      fullYear: new Date().getFullYear(),
     };
   },
   created() {
@@ -100,6 +101,14 @@ export default {
       combinations avaliable
     </p>
   </div>
+
+  <footer>
+    <p>
+      Copyright <span class="copyright">&copy;</span> {{ fullYear }}
+      <a href="https://doronmor.com/" target="_blank">Doron Mor</a>. All rights
+      reserved.
+    </p>
+  </footer>
 </template>
 
 <style scoped></style>
